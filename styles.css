@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navlist {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.contanier {
+  height: 100%;
+  width: 100%;
+  overflow-x: none;
+  min-height: 80px;
+  background-color: #c8c8c8;
+  background-image: linear-gradient(
+    90deg,
+    #c8c8c8 0%,
+    #ffffff 50%,
+    #c8c8c8 100%
+  );
+}
+
+.NavContanier {
+  width: 100%;
+  background-color: #0f0f15;
+  background-image: linear-gradient(160deg, #0f0f15 0%, #98039d 100%);
+}
+
+#brandname {
+  font-size: 2.5rem;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: "Crimson Text", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Navanchor {
+  color: white;
+}
+
+#navItems {
+  display: flex;
+  gap: 20px;
+  padding-top: 5px;
+  font-family: "Crimson Text", serif;
+}
+
+.containerbox {
+  width: 50%;
+  margin: auto;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  height: 600px;
+  border-radius: 5%;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 20px black;
+}
+
+.footerBox {
+  background-color: #0f0f15;
+  background-image: linear-gradient(160deg, #0f0f15 0%, #98039d 100%);
+  width: 100%;
+  text-align: center;
+}
+
+.footerBox p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+.leftbox {
+  padding: 10px;
+}
+.rigthbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.rigthbox img {
+  border-radius: 20px;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: linear;
+}
+
+.images{
+  display: flex;
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: #7373739e;
+  border-radius: 20px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.6s linear;
+}
+
+.overlay span{
+  color: white;
+  font-size: 1.2rem;
+}
+
+.images:hover {
+  transform: scale(1.1);
+}
+.images:hover .overlay{
+  opacity: 1;
+}
